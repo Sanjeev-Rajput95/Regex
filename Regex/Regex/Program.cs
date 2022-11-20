@@ -12,7 +12,12 @@ namespace RegexPrograms
 
              Regex rg = new Regex(pattern);
              bool result = rg.IsMatch("400088");
-             Console.WriteLine(result);
+             Console.WriteLine("PIN : " + result);
+
+             bool alphabet_SpecialChar = rg.IsMatch("A400088");
+             Console.WriteLine("Alphabet : " + alphabet_SpecialChar);
+
+
 
         }
     }
