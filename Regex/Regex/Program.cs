@@ -28,8 +28,19 @@ namespace RegexPrograms
              Regex rgSpaces = new Regex(pattern2);
              bool result2 = rgSpaces.IsMatch("400088");
              Console.WriteLine("Spaces between number " + result2);
-
              
+             Console.WriteLine("\n\n============== WELCOME TO REGEX EMAIL PROGRAM ==============\n\n");
+
+             string emailPattern = @"^[a-z A-Z]+([.][a-z A-Z]+)*@[a-z A-Z]+.[a-z A-Z]{2,10}([.][a-z A-Z]{2,3})?$";
+             Regex em = new Regex(emailPattern);
+             bool emresult = em.IsMatch("abc.xyz@bridgelabz.co.in");
+             bool emresult1 = em.IsMatch("abc@bridgelabz.co");
+            Console.WriteLine("first uc of email is : " + emresult);
+            Console.WriteLine("Without used Manadatory : " + emresult1);
+
+            
+
+
 
 
 
